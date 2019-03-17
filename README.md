@@ -1,2 +1,2 @@
 # spring5-di-demo
-Spring 5 Dependency Injection Demo
+Just a demo application to show Spring 5 Dependency Injection options
