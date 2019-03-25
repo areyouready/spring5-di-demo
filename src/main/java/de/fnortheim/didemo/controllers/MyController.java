@@ -9,6 +9,6 @@ import org.springframework.stereotype.Controller;
 public class MyController {
 
     public void hello() {
-        System.out.println("Hello World");
+        System.out.println("Hello World from MyController");
     }
 }
