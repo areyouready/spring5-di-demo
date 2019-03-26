@@ -1,7 +1,9 @@
 package de.fnortheim.didemo.controllers;
 
+import de.fnortheim.didemo.services.GreetingService;
 import de.fnortheim.didemo.services.GreetingServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -12,11 +14,12 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class PropertyInjectedController {
 
+//    @Qualifier("greetingServiceImpl")
     @Autowired
-    public GreetingServiceImpl greetingService;
+    public GreetingService greetingServiceImpl; //bean name is used to define right implementation to inject (works with reflection)
 
     public String sayHello() {
-        return greetingService.sayGreeting();
+        return greetingServiceImpl.sayGreeting();
     }
 
 
