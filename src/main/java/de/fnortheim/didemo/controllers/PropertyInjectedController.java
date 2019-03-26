@@ -14,11 +14,15 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class PropertyInjectedController {
 
-//    @Qualifier("greetingServiceImpl")
     @Autowired
+    @Qualifier("greetingServiceImpl")
     public GreetingService greetingServiceImpl; //bean name is used to define right implementation to inject (works with reflection)
 
+    @Autowired
+    public GreetingService primaryGreetingService;
+
     public String sayHello() {
+        primaryGreetingService.sayGreeting();
         return greetingServiceImpl.sayGreeting();
     }
 
