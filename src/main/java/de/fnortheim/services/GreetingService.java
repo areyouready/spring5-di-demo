@@ -1,4 +1,4 @@
-package de.fnortheim.didemo.services;
+package de.fnortheim.services;
 
 /**
  * created by sebastian on Mar, 2019

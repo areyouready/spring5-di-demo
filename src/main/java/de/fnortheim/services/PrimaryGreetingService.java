@@ -1,4 +1,4 @@
-package de.fnortheim.didemo.services;
+package de.fnortheim.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;

@@ -1,4 +1,4 @@
-package de.fnortheim.didemo.services;
+package de.fnortheim.services;
 
 import org.springframework.stereotype.Service;
 

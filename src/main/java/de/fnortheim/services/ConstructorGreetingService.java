@@ -1,4 +1,4 @@
-package de.fnortheim.didemo.services;
+package de.fnortheim.services;
 
 import org.springframework.stereotype.Service;
 
@@ -6,9 +6,9 @@ import org.springframework.stereotype.Service;
  * created by sebastian on Mar, 2019
  */
 @Service
-public class SetterGreetingService implements GreetingService {
+public class ConstructorGreetingService implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "Hello from setter injection";
+        return "Hello World from constructor injection";
     }
 }

@@ -1,6 +1,6 @@
 package de.fnortheim.didemo.controllers;
 
-import de.fnortheim.didemo.services.GreetingService;
+import de.fnortheim.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 /**

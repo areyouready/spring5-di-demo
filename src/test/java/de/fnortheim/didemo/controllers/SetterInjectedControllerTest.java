@@ -1,6 +1,6 @@
 package de.fnortheim.didemo.controllers;
 
-import de.fnortheim.didemo.services.GreetingServiceImpl;
+import de.fnortheim.services.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 

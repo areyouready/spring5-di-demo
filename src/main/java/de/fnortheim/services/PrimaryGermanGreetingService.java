@@ -1,4 +1,4 @@
-package de.fnortheim.didemo.services;
+package de.fnortheim.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
  * created by sebastian on Mar, 2019
  */
 @Service
-@Profile("es")
 @Primary
-public class PrimarySpanishGreetingService implements GreetingService {
+@Profile({"de", "default"}) //default makes this the fallback if no profile is selected in application.properties
+public class PrimaryGermanGreetingService implements GreetingService {
 
     @Override
     public String sayGreeting() {
-        return "Servicio de Saludo Primario ";
+        return "Primärer Grußdienst";
     }
 }
