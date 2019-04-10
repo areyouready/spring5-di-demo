@@ -12,8 +12,15 @@ import org.springframework.stereotype.Service;
 @Profile({"de", "default"}) //default makes this the fallback if no profile is selected in application.properties
 public class PrimaryGermanGreetingService implements GreetingService {
 
+    private final GreetingRepository greetingRepository;
+
+    public PrimaryGermanGreetingService(GreetingRepository greetingRepository) {
+
+        this.greetingRepository = greetingRepository;
+    }
+
     @Override
     public String sayGreeting() {
-        return "Primärer Grußdienst";
+        return greetingRepository.getGermanGreeting();
     }
 }
