@@ -12,7 +12,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class PropertyConfig {
 
-     @Value("${fnortheim.username}")
+    @Value("${fnortheim.username}")
     String user;
 
     @Value("${fnortheim.password}")

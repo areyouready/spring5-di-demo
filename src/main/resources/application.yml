@@ -3,3 +3,10 @@ fnortheim:
     username: jmsUser
     password: jmsPass
     url: jmsUrl
+
+---
+spring:
+  profiles: de
+fnortheim:
+  jms:
+    username: german jmsUser
