@@ -1,0 +1,5 @@
+fnortheim:
+  jms:
+    username: jmsUser
+    password: jmsPass
+    url: jmsUrl

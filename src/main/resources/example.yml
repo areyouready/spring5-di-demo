@@ -1,0 +1,33 @@
+# comment
+
+name: TheUser
+
+names:
+  - Dave
+  - Martin
+  - Andrew
+
+pound_sign: "#"
+
+book:
+  author: John Doe
+  publisher: Easy Publishing
+
+truth: yes
+another_truth: True
+more_true: true
+false: no #No, False, false, FALSE
+
+string_val: "This is it's quote"
+
+colon_string: "My courses: one, two, three"
+
+include_new_lines: |
+  jfksalfja
+  fjdksjl
+  ikrijgri
+
+ignore_new_lines: >
+  Just
+  one
+  line
